@@ -1,0 +1,59 @@
+<html>
+<script language="javascript" type="text/javascript">
+/* Visit http://www.yaldex.com/ for full source code
+and get more free JavaScript, CSS and DHTML scripts! */
+<!-- Begin
+function LogIn(){
+loggedin=false;
+username="";
+password="";
+username=prompt("Username:","");
+username=username.toLowerCase();
+password=prompt("Password:","");
+password=password.toLowerCase();
+if (username=="guest" && password=="login") { 
+loggedin=true;
+window.location="home-page.html";
+}
+if (username=="guest2" && password=="login2") {
+loggedin=true;
+window.location="home-page2.html";
+}
+if (loggedin==false) {
+alert("Invalid login!");
+}
+}
+// End -->
+</script> 
+<center>
+<form><input type=button value="Login!" onClick="LogIn()"></form>
+</center>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('body').bind('cut copy paste', function (e) {
+		e.preventDefault();
+	})
+	$("body").on("contextmenu", function(e) {
+	/* change the ".code" to "body" to disable all the part. otherwise it will disable only where class="code" will be mentioned in html body part. */
+		return false;
+	})
+})
+
+</script>
+<script src='demo-to-prevent-copy-paste-on-blogger_files/googleapis.js'></script>
+<script type='text/javascript'>
+if (typeof document.onselectstart!="undefined" ) { document.onselectstart=new Function ("return false" );
+} else { document.onmousedown=new Function ("return false" ); document.onmouseup=new Function ("return true" );
+}
+</script>
+<script language='JavaScript1.2'> function disableselect(e){ return false } function reEnable(){ return true } //if IE4+ document.onselectstart=new Function ("return false") //if NS6 if (window.sidebar){ document.onmousedown=disableselect document.onclick=reEnable } </script>
+</head>
+<body style:"background-color:#f5f5f5;" background="body-bg3.png"; color: #444;>
+<h1> Hello World</h1>
+</body>
+</html>
